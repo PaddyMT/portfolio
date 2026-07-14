@@ -1,0 +1,8 @@
+# OS / editor cruft — nothing to build, this is a static site
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.tmp
+.vscode/
+.idea/
