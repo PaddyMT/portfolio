@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FFFFFF" />
 <title>Pradyumna Acharya — AI Product Leader & Founder</title>
 <meta name="description" content="Pradyumna Acharya — Founder of Milago.ai and VP of Product Engineering at Mantrika.ai. 16 years building and leading AI products from zero to production." />
 <meta name="author" content="Pradyumna Acharya" />
@@ -25,23 +26,23 @@
 /* ============================================================
    THEME TOKENS
 ============================================================ */
-/* Single, committed dark theme */
+/* Single, committed light theme */
 :root {
-  --paper:      #16120E;
-  --paper-2:    #1D1813;
-  --paper-3:    #251E17;
-  --ink:        #EFE8DB;
-  --ink-soft:   #B4A996;
-  --ink-faint:  #968B7A;
-  --line:       rgba(239,232,219,0.14);
-  --line-soft:  rgba(239,232,219,0.07);
-  --accent:     #E06A5E;
-  --accent-2:   #F0977F;
-  --accent-tint:rgba(224,106,94,0.16);
-  --card:       #1E1811;
-  --shadow:     rgba(0,0,0,0.5);
-  --grain-op:   0.05;
-  color-scheme: dark;
+  --paper:      #FFFFFF;
+  --paper-2:    #F7F4EE;
+  --paper-3:    #F1EDE4;
+  --ink:        #1D1712;
+  --ink-soft:   #574E42;
+  --ink-faint:  #766B5A;
+  --line:       rgba(29,23,18,0.15);
+  --line-soft:  rgba(29,23,18,0.08);
+  --accent:     #C2453A;
+  --accent-2:   #E06A5E;
+  --accent-tint:rgba(194,69,58,0.10);
+  --card:       #FFFFFF;
+  --shadow:     rgba(30,20,12,0.18);
+  --grain-op:   0.04;
+  color-scheme: light;
 }
 
 /* ============================================================
@@ -80,7 +81,7 @@ body::before {
   pointer-events: none;
   opacity: var(--grain-op);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
 }
 
 /* ============================================================
@@ -447,10 +448,10 @@ nav.scrolled .nav-inner { padding-block: .8rem; }
 .stats-band { background: var(--paper-3); color: var(--ink); }
 .stats-band .section { padding-block: clamp(4rem,8vw,6rem); }
 .stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(1.5rem,4vw,3rem) clamp(1rem,3vw,2rem); }
-.stat .num { font-family: 'Fraunces', serif; font-size: clamp(2.6rem,6vw,4.4rem); font-weight: 400; line-height: 1; letter-spacing: -.02em; color: #F5F1E8; }
+.stat .num { font-family: 'Fraunces', serif; font-size: clamp(2.6rem,6vw,4.4rem); font-weight: 400; line-height: 1; letter-spacing: -.02em; color: var(--ink); }
 .stat .num .suf { color: var(--accent); font-style: italic; }
-.stat .lbl { margin-top: .7rem; font-size: .92rem; color: rgba(245,241,232,.66); max-width: 24ch; }
-.stat-divider { grid-column: 1/-1; height: 1px; background: rgba(245,241,232,.14); margin: .4rem 0; display: none; }
+.stat .lbl { margin-top: .7rem; font-size: .92rem; color: var(--ink-soft); max-width: 24ch; }
+.stat-divider { grid-column: 1/-1; height: 1px; background: var(--line); margin: .4rem 0; display: none; }
 
 /* ============================================================
    CONTACT
@@ -777,7 +778,7 @@ footer a:hover { color: var(--accent); }
   <div class="section">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-num" style="color:rgba(245,241,232,.5)">04 — By the numbers</span>
+        <span class="section-num">04 — By the numbers</span>
         <h2 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">By the numbers</h2>
       </div>
       <div class="stats-grid">
