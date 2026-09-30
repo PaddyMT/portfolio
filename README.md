@@ -1,6 +1,6 @@
 # Pradyumna Acharya — Portfolio
 
-A single, self-contained `index.html` (no build step, no dependencies). Fonts load from
+A single `index.html` plus `photo.webp` (the profile photo) - no build step, no dependencies. Fonts load from
 Google Fonts; everything else is inline. Works offline except for the webfonts.
 
 ## Preview locally
